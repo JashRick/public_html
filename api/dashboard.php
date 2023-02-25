@@ -18,7 +18,7 @@
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total of Medical History</div>
+            <div class="box-topic3">Total of Medical History</div>
             <div class="number">4</div>
             
           </div>

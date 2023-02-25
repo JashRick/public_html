@@ -174,6 +174,12 @@ nav .profile-details i{
 .box-topic{
   font-size: 15px;
   font-weight: 500;
+  text-align: center;
+}
+.box-topic3{
+  font-size: 15px;
+  font-weight: 500;
+ white-space: nowrap;
 }
 .home-content .box .number{
   display: inline-block;
@@ -185,16 +191,14 @@ nav .profile-details i{
 
 .home-content .box .fa-user-cog{
   font-size: 42px;
-  height: 50px;
-  width: 50px;
+  
   line-height: 60px;
   color: #0d62ff;
   border-radius: 12px;
 }
 .home-content .box .fa-user{
 font-size: 42px;
-  height: 50px;
-  width: 50px;
+
   line-height: 60px;
   color: rgb(255, 0, 183);
   border-radius: 12px;
@@ -203,16 +207,14 @@ font-size: 42px;
  }
 .home-content .box .fa-file-medical{
     font-size: 42px;
-    height: 50px;
-    width: 50px;
+   
     line-height: 60px;
     color: #09bb0f;
     border-radius: 12px;
  }
 .home-content .box .fa-notes-medical{
     font-size: 42px;
-    height: 50px;
-    width: 50px;
+  
     line-height: 60px;
     color: #9ba5b0;
     border-radius: 12px;
@@ -224,7 +226,7 @@ font-size: 42px;
 .home-content .main-box{
   display: flex;
   justify-content: space-between;
-  /* padding: 0 20px; */
+   
 }
 
 /* left box */
@@ -298,9 +300,9 @@ font-size: 42px;
     position: absolute;
     top: 70px;
     right: -5px;
-    padding: 10px;
+    padding: 5px;
     background:#004ba7;
-    width: 150px;
+    width: 200px;
     box-sizing: 0 5px 25px rgba(0,0,0,0.1);
     border-radius: 15px;
     transition: 0.5s;
@@ -311,20 +313,12 @@ font-size: 42px;
     visibility: visible;
     opacity: 1;
 }
-.top .action .menu::before{
-    content: '';
-    position: absolute;
-    top: -5px;
-    right: 28px;
-    width: 20px;
-    height: 20px;
-    background: #004ba7;
-    transform: rotate(45deg);
-}
+
+
 
 .top .action .menu span{
     
-    font-size: 15px;
+    font-size: 20px;
     color: rgb(13, 255, 65);
     font-weight: 400;
     border-bottom: #000;
@@ -358,6 +352,8 @@ font-size: 42px;
 }
 .top .action .menu ul li a:hover{
     width: 100%;
+    font-size: 19px;
+    padding: 5px;
     background: #fff;
     color: #004ba7;
     border-radius: 5px;
@@ -390,12 +386,7 @@ font-size: 42px;
   align-items: center;
   text-decoration: none;
 }
-.main-box .top-sales li .product,
-.price{
-  font-size: 17px;
-  font-weight: 400;
-  color: #333;
-}
+
 /* Responsive Media Query */
 @media (max-width: 1240px) {
   .sidebar{
@@ -490,31 +481,49 @@ font-size: 42px;
 }
 
 /* Table Design*/
-.add-admin, .add-patient{
-  background: #004ba7;
-  padding: 3px;
+.add-admin, .add-patient, .add-mh{
+  padding: 5px;
   color: #fff;
   display: inline;
   margin: 0 0 15px 5px;
   
 }
-.journal{
-  background: #4bd70ae3;
-  padding: 3px;
+.add-admin{
+  background: #004ba7;
+  border: 2px solid #004ba7;
+}
+.add-admin:hover{
+  background: #fff;
+  color: #004ba7;
+}
+.add-patient{
+  background-color: #e40606;
+  border: 2px solid #e40606;
+}
+.add-patient:hover{
+  background-color: #fff;
+  color: #e40606;
+}
+.add-mh{
+  background: #4bd70ab5;
   color: #fff;
-  
+  border: 2px solid #4bd70ab5;
+}
+.add-mh:hover{
+  background: #fff;
+  color: #4bd70ab5;
 }
 .overview .title {
   border-bottom: 2px solid rgb(157, 151, 151);
   margin: 0 0 30px 0;
 }
 .overview #title-icon{
-  
   font-size: 25px;
   width: 40px;
   height: 40px;
   color: #0d62ff;
-  padding: 0 5px;
+  padding: 0 10px;
+  margin: 0px;
 }
 .view{
   background: rgb(9, 132, 239);

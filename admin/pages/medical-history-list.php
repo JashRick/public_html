@@ -1,9 +1,9 @@
 
 <div class="overview">
     <div class="title">
-        <i id="title-icon" class='fas fa-file-medical'></i>
+        <i id="title-icon" class='fas fa-file-medical' style="color: #09bb0f;"></i>
         <span class="text">Medical History List</span>
-        <button class="add-admin" type="button" onclick="location.href='../pages/medical_history.php'"><i class="fas fa-plus"></i> <span> Add new Medical Info</span></button>
+        <button class="add-mh" type="button" onclick="location.href='../pages/medical_history.php'"><i class="fas fa-plus"></i> <span> Add new Medical Info</span></button>
     </div>
 
     <div>

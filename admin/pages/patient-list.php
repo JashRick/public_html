@@ -2,7 +2,7 @@
 
 <div class="overview">
     <div class="title">
-        <i id="title-icon" class='fas fa-user'></i>
+        <i id="title-icon" class='fas fa-user' style="color: rgb(255, 0, 183);"></i>
         <span class="text">Patient List</span>
         <button class="add-patient" type="button" onclick="location.href='../pages/patient_reg.php'"><i class="fas fa-plus"></i> <span> Add New Patient</span></button>
     </div>
