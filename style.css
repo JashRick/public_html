@@ -1,0 +1,469 @@
+*{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ 
+  header{
+  	position: fixed;
+  	top: 0; left: 0; right: 0;
+  	background: white;
+  	box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  	padding: 0px 7%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	z-index: 1000;
+  }
+ 
+  header .navbar ul{
+  	list-style: none;
+  }
+  header .navbar ul li{
+  	position: relative;
+  	float: left;
+  }
+header .navbar ul li a{
+	font-size: 20px;
+	padding: 15px;
+	color: #004ba7;
+	display: block;
+}
+header .navbar ul li a:hover{
+	background: #1b9bff;
+	color: #fff;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+header .navbar ul li ul{
+	position: absolute;
+	left: 0;
+	width: 150px;
+	background: #fff;
+	display: none;
+	border-radius: 0 0 10px 10px;
+	text-align: center;
+}
+header .navbar ul li ul li{
+	width: 100%;
+	border-top: 2px solid rgba(0,0,0,.1);
+}
+header .navbar ul li ul li ul{
+	left: 200px;
+	top: 0;
+  
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover> ul{
+	display: list-item;
+ 
+}
+
+
+#menu-bar{
+	display: none;
+}
+header .menu{
+	font-size: 30px;
+	color: #004ba7;
+	cursor: pointer;
+	display: none;
+}
+
+
+@media(max-width: 991px){
+	header{
+		padding: 10px;
+	}
+	header .menu{
+		display: initial;
+	}
+	header .navbar{
+		position: absolute;
+		top: 100%; left: 0;  right: 0;
+		background: #fff;
+		border-bottom: 3px solid rgba(0, 0, 0, .1);
+		display: none;
+		border-radius: 10px;
+	}
+	header .navbar ul li{
+		width: 100%;
+	}
+	header .navbar ul li ul{
+		width: 100%;
+		position: relative;
+	}
+	header .navbar ul li ul li{
+		background: #eee;
+	}
+	header .navbar ul li ul li ul{
+		width: 100%;
+		left: 0;
+	}
+#menu-bar:checked ~ .navbar{
+		display: initial;
+	}
+	
+}
+.tbox{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .tbox h3{
+    font-size: 30px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+  }
+  .tbox h1{
+    font-size: 47px;
+    margin: 10px 0 40px;
+    letter-spacing: 2px;
+    position: relative;
+    
+  }
+  /* Admin Login styles*/
+ 
+  .container{
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 50px auto;
+	
+  }
+  .wrapper form #er{
+      color: #fd0808;
+     
+      margin-top: 2px;
+      margin-bottom: 2px;
+  }
+  .wrapper{
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+  }
+  .wrapper .title{
+    border: 2px solid #fff;
+    height: 90px;
+    background: #004ba7;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #adminI{
+    position: absolute;
+    height: 200px;
+    width: 100px;
+  }
+  .wrapper form{
+    padding: 30px 25px 25px 25px;
+  }
+  .wrapper form .row{
+    height: 45px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .wrapper form .row input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 10px;
+    border: 2px solid #004ba7;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+ #barcode_input{
+    padding-left: 10px;
+  }
+  form .row input:focus{
+    border-color: #004ba7;
+    box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+  }
+  form .row input::placeholder{
+    color: #999;
+  }
+  .wrapper form .row i{
+    position: absolute;
+    width: 47px;
+    height: 45px;
+    color: #fff;
+    font-size: 18px;
+    background: #004ba7;
+    border: 1px solid #004ba7;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper form .pass{
+    margin: -8px 0 20px 0;
+  }
+  .wrapper form .pass a{
+    color: #004ba7;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .wrapper form .pass a:hover{
+    text-decoration: underline;
+  }
+  .wrapper form .button input{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: #004ba7;
+    border: 3px solid #004ba7;
+    cursor: pointer;
+    align-content: center;
+  }
+  form .button .login:hover{
+    background: #0ac21d;
+  }
+  .wrapper form {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .wrapper form .register a{
+    color: #004ba7;
+    text-decoration: none;
+  }
+  form .register a:hover{
+    text-decoration: underline;
+  }
+   .h1title h1{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	margin-top: 100px;
+	color: #fff;
+	text-align: center;
+   }
+  
+/* Patient Information */
+.container1{
+    max-width: 700px;
+    padding: 0 20px;
+    margin: 10px auto;
+	
+  }
+.wrapper1{
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+  }
+
+  .wrapper1 .title{
+    border: 2px solid #fff;
+    height: 90px;
+    background: #004ba7;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #adminI{
+    position: absolute;
+    height: 200px;
+    width: 100px;
+  }
+  .wrapper1 form{
+    padding: 5px 25px 5px 25px;
+  }
+ 
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:  0px;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 5px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: #004ba7;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 5px 0;
+    letter-spacing: 1PX;
+}
+#fullName{
+  width: 30%;
+  color: #004ba7;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 3px;
+  flex-direction: row;
+  
+  justify-content: space-between;
+ 
+}
+
+.user-input-box input, select{
+    height: 35px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 2px solid #004ba7;
+    padding: 0 10px;
+}
+.form-submit-btn{
+    margin-top: 10px;
+}
+select option{
+	padding: 10px;
+	border: 3px solid #004ba7;
+	border-radius: 5px;
+	color: #004ba7;
+}
+
+.form-submit-btn input{
+    width: 100%;
+    margin-top: 2px 0px 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:3px solid #004ba7;
+    border-radius: 10px;
+	  color: #fdfdfd;
+    background: #004ba7;
+   
+}
+
+.form-submit-btn input:hover{
+    background: #0ac21d;
+    color: rgb(255, 255, 255);
+}
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 1px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+}
+/* QR Code Style */
+.container2{
+  max-width: 700px;
+  padding: 0 20px;
+  margin: 40px auto;
+}
+.wrapper2{
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper2 .title2{
+  border: 2px solid #fff;
+  height: 90px;
+  background: #004ba7;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#adminI{
+  position: absolute;
+  height: 200px;
+  width: 100px;
+}
+.wrapper2 form{
+  padding: 5px 25px 5px 25px;
+}
+.main-user-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:  0px;
+}
+.user-input-box2:nth-child(2n){
+  justify-content: end;
+}
+.user-input-box2{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.user-input-box2 label{
+  width: 95%;
+  color: #004ba7;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0;
+  letter-spacing: 1PX;
+  text-align: center;
+}
+.wrapper2 .go-to-MH{
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* PHP */
+
