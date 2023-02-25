@@ -490,15 +490,16 @@ font-size: 42px;
 }
 
 /* Table Design*/
-.add-admin{
+.add-admin, .add-patient{
   background: #004ba7;
   padding: 3px;
   color: #fff;
-  margin: 3px 0 15px 720px;
+  display: inline;
+  margin: 0 0 15px 5px;
   
 }
 .journal{
-  background: #56ff08b9;
+  background: #4bd70ae3;
   padding: 3px;
   color: #fff;
   
@@ -508,15 +509,48 @@ font-size: 42px;
   margin: 0 0 30px 0;
 }
 .overview #title-icon{
-  background: red;
+  
   font-size: 25px;
   width: 40px;
   height: 40px;
+  color: #0d62ff;
+  padding: 0 5px;
 }
-.add-patient{
-  background: #004ba7;
-  padding: 3px;
-  color: #fff;
-  margin: 3px 0 15px 820px;
+.view{
+  background: rgb(9, 132, 239);
+  text-align: center;
+  border: 2px solid #0d62ff;
+  margin-bottom: 3px;
+}
+.view:hover{
+  background: rgba(9, 132, 239, 0.841);
+}
+.edit{
+  background: rgb(9, 239, 9);
+  text-align: center;
+  border: 2px solid #0d62ff;
+  margin-bottom: 3px;
+}
+.edit:hover{
+  background: #09bb0f;
+}
+.mhedit{
+  background: #9ba5b0;
+  text-align: center;
+  border: 2px solid #0d62ff;
+  margin-bottom: 3px;
+}
+
+.delete{
+  background: red;
+  text-align: center;
+  border: 2px solid #0d62ff;
+}
+.delete:hover{
+  background: #e40606;
   
+}
+.display a{
+  text-decoration: none;
+  color: #ffffffee;
 }

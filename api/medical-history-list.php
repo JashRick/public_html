@@ -8,12 +8,16 @@ $result = $con->query($sql);
 
 
       echo '<tr>';
-      echo '<td>' . $row["pat_lname"] . '</td>';
+      echo '<td>' . $row["patient_id"] . '</td>';
+      echo '<td>' . $row["pat_firstname"] . '</td>';
+      echo '<td>' . $row["pat_lastname"] . '</td>';
+      echo '<td>' . $row["pat_mi"] . '</td>';
       echo '<td>
-        <a href="?page=medical-history-list&id='.$row['patient_id'].'">
+        <a href="?page=medical-history-list&id='.$row['patient_id'].'"><div class="edit">
         <i class="fas fa-user-edit"></i><span class="link-name"> Edit</span>
-        </a>
-        <a href="button"><i class="fas fa-trash-alt" alt="Delete"></i> Delete</a>
+        </a></div>
+        <div class="delete">
+        <a href="button"><i class="fas fa-trash-alt" alt="Delete"></i> Delete</a> </div>
       </td>';
       echo '</tr>';
         

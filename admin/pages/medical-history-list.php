@@ -1,7 +1,7 @@
 
 <div class="overview">
     <div class="title">
-        <i id="title-icon" class="uil uil-tachometer-fast-alt"></i>
+        <i id="title-icon" class='fas fa-file-medical'></i>
         <span class="text">Medical History List</span>
         <button class="add-admin" type="button" onclick="location.href='../pages/medical_history.php'"><i class="fas fa-plus"></i> <span> Add new Medical Info</span></button>
     </div>
@@ -10,7 +10,10 @@
     <table id="dentist-list" class="display" style="width:100%">
             <thead>
                 <tr>
-                    <th>Medical History List</th>
+                    <th>Patient ID</th>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Middle Initial</th>
                     <th>Action</th>
                 </tr>
             </thead>

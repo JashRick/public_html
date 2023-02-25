@@ -1,7 +1,7 @@
 
 <div class="overview">
     <div class="title">
-        <i id="title-icon" class="uil uil-tachometer-fast-alt"></i>
+        <i id="title-icon" class='fas fa-notes-medical'></i>
         <span class="text">Reports List</span>
        
     </div>
@@ -10,7 +10,10 @@
     <table id="dentist-list" class="display" style="width:100%">
             <thead>
                 <tr>
-                    <th>Reports List</th>
+                    <th>Patient ID</th>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Middle Initial</th>
                     <th>Action</th>
                 </tr>
             </thead>

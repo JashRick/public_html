@@ -8,12 +8,21 @@ $result = $con->query($sql);
 
 
       echo '<tr>';
+      echo '<td>' . $row["admin_username"] . '</td>';
       echo '<td>' . $row["admin_fullname"] . '</td>';
+      echo '<td>' . $row["admin_type"] . '</td>';
       echo '<td>
+      <div class="view">
+          <a href="button"><i class="fas fa-eye" alt="View"></i> View</i> </a>
+        </div>
+      <div class="edit">
         <a href="?page=dentist-form&id='.$row['id'].'">
-        <i class="fas fa-user-edit"></i><span class="link-name"> </span>
+        <i class="fas fa-user-edit"></i><span class="link-name"> Edit</span>
         </a>
-        <a href="button"><i class="fas fa-trash-alt" alt="Delete"></i> </a>
+       </div>  
+        <div class="delete">
+          <a href="button"><i class="fas fa-trash-alt" alt="Delete"> Delete</i> </a>
+        </div>
       </td>';
       echo '</tr>';
         
