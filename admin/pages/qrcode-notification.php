@@ -13,32 +13,23 @@
 
 <div class="title"><i class="fas fa-qrcode"></i><span class="text">&nbsp;QR Code Notification</span></div>
 
-<table id="journal" class="table table-striped table-bordered nowrap" style="width:100%">
+<table id="notif" class="table table-striped table-bordered nowrap" style="width:100%">
         <thead>
             <tr>
-                <th>Username</th>
-                <th>Name</th>
-                <th>Date</th>
-                <th>Log In</th>
-                <th>Log Out</th>
-               
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Tiger</td>
-                <td>Nixon</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                
-            </tr>
+        <?php include("../api/notification-list.php")?> 
         </tbody>
 </table>
 </div>
 <script>
     $(document).ready(function() {
-    var table = $('#journal').DataTable( {
+    var table = $('#notif').DataTable( {
         responsive: true
     } );
  

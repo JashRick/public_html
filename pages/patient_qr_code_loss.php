@@ -11,7 +11,7 @@
    
     <div class="wrapper">
       <div class="title"><span>Loss or Forgot QR Code?</span></div>
-      <form action="../api/notification.php" method="GET">
+      <form action="../api/patient-barcode-loss.php" method="GET">
       
         <div class="row">
          
