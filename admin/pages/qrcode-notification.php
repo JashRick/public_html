@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.3.1/css/fixedHeader.bootstrap.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.bootstrap.min.css">
 
-<div class="title"><i class="fas fa-user-clock"></i><span class="text">&nbsp;Log Journal</span></div>
+<div class="title"><i class="fas fa-qrcode"></i><span class="text">&nbsp;QR Code Notification</span></div>
 
 <table id="journal" class="table table-striped table-bordered nowrap" style="width:100%">
         <thead>

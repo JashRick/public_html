@@ -25,7 +25,8 @@
         <div class="user-input-box2">
                 <label>Your Unique QR Code: </label>
                 <a id="link" download>
-          <svg id="barcode"></svg>
+          <!-- <svg id="barcode"></svg> -->
+          <div id="qrcode"></div>
         </a>
               </div>
         </div>
@@ -43,9 +44,22 @@ if (isset($_GET["patient_id"])) {
 
 	$patient_id = $_GET["patient_id"];
 
-	echo '<script type="text/javascript">';
-  echo 'JsBarcode("#barcode", "'.$patient_id.'");';
+	// echo '<script type="text/javascript">';
+  // echo 'JsBarcode("#barcode", "'.$patient_id.'");';
+	// echo '</script>';
+
+  echo '<script type="text/javascript">';
+  echo 'var qrcode = new QRCode("qrcode", {
+    text: "'.$patient_id.'",
+    width: 128,
+    height: 128,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+  });';
 	echo '</script>';
+
+  
 }
 ?>
 

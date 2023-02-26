@@ -14,7 +14,7 @@
 			<li><a href="#">Patient</a>
 					<ul>
 						<li><a href="../pages/patient_reg.php">Registration</a></li>
-            <li><a href="../pages/patient_barcode_loss.php">Barcode Loss</a></li>
+            <li><a href="../pages/patient_qr_code_loss.php">QR Code Loss</a></li>
 					</ul>
 			</li>
 			<li><a href="#">Medical History</a>
@@ -34,3 +34,4 @@
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+<script src="../qrcode.js"></script>

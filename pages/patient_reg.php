@@ -53,7 +53,7 @@ if (isset($_GET["status"]) && isset($_GET["message"]) && isset($_GET["patient_id
 	echo '<script type="text/javascript">';
 	echo 'Swal.fire("Patient", "'.$message.'", "'.$status.'").then((result) => {
     if (result.isConfirmed) {
-      location.replace("patient_barcode.php?patient_id='.$patient_id.'");
+      location.replace("patient_qr_code.php?patient_id='.$patient_id.'");
     }
   }); '; 
 	echo '</script>';
@@ -126,7 +126,7 @@ if (isset($_GET["status"]) && isset($_GET["message"]) && isset($_GET["patient_id
 	echo '<script type="text/javascript">';
 	echo 'Swal.fire("Patient", "'.$message.'", "'.$status.'").then((result) => {
     if (result.isConfirmed) {
-      location.replace("patient_barcode.php?patient_id='.$patient_id.'");
+      location.replace("patient_qr_code.php?patient_id='.$patient_id.'");
     }
   }); '; 
 	echo '</script>';

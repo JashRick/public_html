@@ -10,11 +10,9 @@
     <div>
           <?php include("../api/dashboard.php")?> 
     </div>
-    <div class="title">
-    <i class="fas fa-user-clock"></i>
-        <span class="text">Log Journal</span>
-        
-    </div>
-    <?php include("../admin/pages/log-journal.php")?> 
+
+    <!-- <?php include("../admin/pages/log-journal.php")?>  -->
+
+    <?php include("../admin/pages/qrcode-notification.php")?> 
 </div>
 

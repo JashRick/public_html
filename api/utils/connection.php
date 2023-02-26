@@ -3,7 +3,7 @@
 $db_name = "id20189319_db_mabisa";
 $sname= "localhost";
 $uname= "root";
-$password = "";
+$password = "root";
 
 $con = mysqli_connect($sname, $uname, $password, $db_name);
 
