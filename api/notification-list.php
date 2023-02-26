@@ -14,17 +14,24 @@ $result = $con->query($sql);
       echo '<td>' . $row["pat_lname"] . '</td>';
       echo '<td>' . $row["pat_fname"] . '</td>';
       echo '<td>
-      <div class="view">
-          <a href="button"><i class="fas fa-eye" alt="View"></i> View</i> </a>
-        </div>
-      <div class="edit">
-        <a href="?page=dentist-form&id='.$row['id'].'">
-        <i class="fas fa-user-edit"></i><span class="link-name"> Edit</span>  
-        </a>
-       </div>  
-        <div class="delete">
-          <a href="button"><i class="fas fa-trash-alt" alt="Delete"> Delete</i> </a>
-        </div>
+      
+      <div id="qrcode-'.$row["patient_id"].'"></div>
+      
+      <script type="text/javascript">
+
+      setTimeout(() => {
+        var qrcode = new QRCode("qrcode-'.$row["patient_id"].'", {
+          text: "'.$row["patient_id"].'",
+          width: 128,
+          height: 128,
+          colorDark : "#000000",
+          colorLight : "#ffffff",
+          correctLevel : QRCode.CorrectLevel.H
+        })
+      }, 1000)
+        
+      </script>
+
       </td>';
       echo '</tr>';
         
@@ -32,5 +39,6 @@ $result = $con->query($sql);
    } else {
     echo "0 results";
    }
+
 
 mysqli_close($con);

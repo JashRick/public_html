@@ -14,17 +14,17 @@
 <div class="title"><i class="fas fa-qrcode"></i><span class="text">&nbsp;QR Code Notification</span></div>
 
 <table id="notif" class="table table-striped table-bordered nowrap" style="width:100%">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>QR Code</th>
+        </tr>
+    </thead>
+    <tbody>
         <?php include("../api/notification-list.php")?> 
-        </tbody>
+    </tbody>
 </table>
 </div>
 <script>

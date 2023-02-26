@@ -9,6 +9,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
   // TODO - create validation
   // TIP - select the patient id first, if its not existing, then proceed in insertion, else send an error status & message
+    
+
+  
+  
 
   // Prepare SQL statement
   $stmt = $con->prepare("INSERT INTO tbl_notification (patient_id) VALUES (?)");
