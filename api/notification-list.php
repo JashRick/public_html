@@ -1,7 +1,7 @@
 <?php
 
 include("../api/utils/connection.php");
-echo "hw4ehe5hserhrht";
+
 $sql = "SELECT * FROM `tbl_notification` INNER JOIN `tbl_patientreg` ON `tbl_patientreg`.patient_id = `tbl_notification`.patient_id";
 
 $result = $con->query($sql);

@@ -482,6 +482,7 @@ font-size: 42px;
 
 /* Table Design*/
 .add-admin, .add-patient, .add-mh{
+  font-size: 18px;
   padding: 5px;
   color: #fff;
   display: inline;
@@ -519,10 +520,9 @@ font-size: 42px;
 }
 .overview #title-icon{
   font-size: 25px;
-  width: 40px;
-  height: 40px;
+  
   color: #0d62ff;
-  padding: 0 10px;
+  
   margin: 0px;
 }
 .view{

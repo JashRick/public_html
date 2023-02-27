@@ -8,7 +8,7 @@
     </div>
 
     <div>
-    <table id="dentist-list" class="display" style="width:100%">
+    <table id="table" class="table table-striped table-bordered nowrap" style="width:100%">
             <thead>
                 <tr>
                     <th>Patient ID</th>
@@ -29,6 +29,6 @@
 
 <script>
     $(document).ready(function () {
-        $('#dentist-list').DataTable();
+        $('#table').DataTable();
     });
 </script>
