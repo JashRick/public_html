@@ -9,8 +9,8 @@ $result = $con->query($sql);
 
       echo '<tr>';
       echo '<td>' . $row["patient_id"] . '</td>';
-      echo '<td>' . $row["pat_lname"] . '</td>';
-      echo '<td>' . $row["pat_fname"] . '</td>';
+      echo '<td>' . $row["pat_lastname"] . '</td>';
+      echo '<td>' . $row["pat_firstname"] . '</td>';
       echo '<td>' . $row["pat_mi"] . '</td>';
        echo '<td>
             <div id="qrcode-' . $row["patient_id"] . '"></div>

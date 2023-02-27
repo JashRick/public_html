@@ -7,8 +7,8 @@
             <?php
                 // establish database connection
                 $servername = "localhost";
-                $username = "id20189319_mabisa";
-                $password = "CjvKBx>duE(%2D9g";
+                $username = "root";
+                $password = "";
                 $dbname = "id20189319_db_mabisa";
                 
                 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -43,8 +43,8 @@
             <?php
                 // establish database connection
                 $servername = "localhost";
-                $username = "id20189319_mabisa";
-                $password = "CjvKBx>duE(%2D9g";
+                $username = "root";
+                $password = "";
                 $dbname = "id20189319_db_mabisa";
                 
                 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -79,8 +79,8 @@
             <?php
                 // establish database connection
                 $servername = "localhost";
-                $username = "id20189319_mabisa";
-                $password = "CjvKBx>duE(%2D9g";
+                $username = "root";
+                $password = "";
                 $dbname = "id20189319_db_mabisa";
                 
                 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -115,8 +115,8 @@
             <?php
                 // establish database connection
                 $servername = "localhost";
-                $username = "id20189319_mabisa";
-                $password = "CjvKBx>duE(%2D9g";
+                $username = "root";
+                $password = "";
                 $dbname = "id20189319_db_mabisa";
                 
                 $conn = new mysqli($servername, $username, $password, $dbname);

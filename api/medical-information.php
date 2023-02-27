@@ -14,7 +14,7 @@ $fc = $_GET['freq_colds'];
 $diabetes = $_GET['diabetes'];
 $sm = $_GET['self_medication'];
 
- $con = new mysqli('localhost', 'id20189319_mabisa', 'CjvKBx>duE(%2D9g', 'id20189319_db_mabisa');
+ $con = new mysqli('localhost', 'root', '', 'id20189319_db_mabisa');
   if ($con->connect_error) {
       die('Connection Failed :' .$con->connect_error);
     } else {

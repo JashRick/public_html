@@ -3,7 +3,7 @@
 
 <div class="title"><i class="fas fa-qrcode"></i><span class="text">&nbsp;Scanned QR Code</span></div>
 
-<table id="notif" class="table table-striped table-bordered nowrap" style="width:100%">
+<table id="notif" class="table table-bordered " style="width:100%">
     <thead>
         <tr>
             <th>ID</th>

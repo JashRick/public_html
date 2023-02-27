@@ -1,7 +1,7 @@
 <?php
 
 $sname= "localhost";
-$uname= "id20189319_mabisa";
+$uname= "root";
 $password = "Ww&]&eWm4WfrAMlG";
 $db_name = "id20189319_db_mabisa";
 

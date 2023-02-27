@@ -15,7 +15,7 @@ $retracted = $_GET['retracted'];
 $bleeding = $_GET['bleeding'];
 $malocclusion = $_GET['malocclusion'];
 
- $conn = new mysqli('localhost', 'id20189319_mabisa', 'CjvKBx>duE(%2D9g', 'id20189319_db_mabisa');
+ $conn = new mysqli('localhost', 'root', '', 'id20189319_db_mabisa');
   if ($conn->connect_error) {
       die('Connection Failed :' .$conn->connect_error);
     } else {
