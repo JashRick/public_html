@@ -2,7 +2,7 @@
 <div class="overview">
     <div class="title">
         <i id="title-icon" class='fas fa-notes-medical' style="color: #9ba5b0;"></i>
-        <span class="text">Reports List</span>
+        <span class="text">Clinical Examination List</span>
        
     </div>
 
@@ -14,6 +14,7 @@
                     <th>Last Name</th>
                     <th>First Name</th>
                     <th>Middle Initial</th>
+                    <th>QR Code</th>
                     <th>Action</th>
                 </tr>
             </thead>

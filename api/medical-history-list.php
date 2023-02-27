@@ -9,9 +9,23 @@ $result = $con->query($sql);
 
       echo '<tr>';
       echo '<td>' . $row["patient_id"] . '</td>';
-      echo '<td>' . $row["pat_firstname"] . '</td>';
-      echo '<td>' . $row["pat_lastname"] . '</td>';
+      echo '<td>' . $row["pat_lname"] . '</td>';
+      echo '<td>' . $row["pat_fname"] . '</td>';
       echo '<td>' . $row["pat_mi"] . '</td>';
+       echo '<td>
+            <div id="qrcode-' . $row["patient_id"] . '"></div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+            <script type="text/javascript">
+                var qrcode = new QRCode("qrcode-' . $row["patient_id"] . '", {
+                    text: "' . $row["patient_id"] . '",
+                    width: 80,
+                    height: 80,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+            </script>
+        </td>';
       echo '<td>
       <div class="view">
       <a href="button"><i class="fas fa-eye" alt="View"></i> View</i> </a>

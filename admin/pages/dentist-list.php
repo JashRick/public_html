@@ -10,9 +10,10 @@
     <table id="table" class="table table-striped table-bordered nowrap" style="width:100%" >
             <thead>
                 <tr>
+                    <th>QR Code</th>
+                    <th>id</th>
                     <th>Admin Username</th>
                     <th>Admin Name</th>
-                    <th>Type</th>
                     <th>Action</th>
                 </tr>
             </thead>

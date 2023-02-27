@@ -14,14 +14,17 @@ $fc = $_GET['freq_colds'];
 $diabetes = $_GET['diabetes'];
 $sm = $_GET['self_medication'];
 
- $con = new mysqli('localhost', 'root', '', 'id20189319_db_mabisa');
+ $con = new mysqli('localhost', 'id20189319_mabisa', 'CjvKBx>duE(%2D9g', 'id20189319_db_mabisa');
   if ($con->connect_error) {
       die('Connection Failed :' .$con->connect_error);
     } else {
     $stmt = $con->prepare ("insert into tbl_patientmedhis (patient_id, pat_lname, pat_fname, pat_mi, gen_health, head_aches, allergies, gum_bleeding, blood_pressure, sinus_trouble, freq_colds, diabetes, self_med) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("issssssssssss",$patid, $lname, $fname, $mi, $ghealth, $headaches, $allergies, $bog, $hbp, $st, $fc, $diabetes, $sm);
     $stmt->execute();
-    echo "Data added sucessfully.";
+    echo '<script type="text/javascript">'; 
+    echo 'alert("Successfully Added!"); '; 
+    echo 'window.location = "https://mabisamercadodentalclinic.000webhostapp.com/pages/medical_history.php";';
+    echo '</script>';
     $stmt->close();
     $con->close();
     }

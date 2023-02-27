@@ -25,8 +25,7 @@
         <div class="user-input-box2">
                 <label>Your Unique QR Code: </label>
                 <a id="link" download>
-          <!-- <svg id="barcode"></svg> -->
-          <div id="qrcode"></div>
+          <svg id="barcode"></svg>
         </a>
               </div>
         </div>
@@ -44,40 +43,26 @@ if (isset($_GET["patient_id"])) {
 
 	$patient_id = $_GET["patient_id"];
 
-	// echo '<script type="text/javascript">';
-  // echo 'JsBarcode("#barcode", "'.$patient_id.'");';
-	// echo '</script>';
-    
-    echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>';    
-    echo '<script type="text/javascript">';
-    echo 'var qrcode = new QRCode("qrcode", {
-    text: "'.$patient_id.'",
-    width: 128,
-    height: 128,
-    colorDark : "#000000",
-    colorLight : "#ffffff",
-    correctLevel : QRCode.CorrectLevel.H
-  });';
+	echo '<script type="text/javascript">';
+  echo 'JsBarcode("#barcode", "'.$patient_id.'");';
 	echo '</script>';
-
-  
 }
 ?>
 
 <script type="text/javascript">    
   function download() {
+    // var can = document.getElementById("barcode");
+
+    // console.log(can)
+
+    //get svg element.
     var svg = document.getElementById("barcode");
 
-    // Check if the SVG element exists
-    if (!svg) {
-      console.error("SVG element not found");
-      return;
-    }
-
+    //get svg source.
     var serializer = new XMLSerializer();
     var source = serializer.serializeToString(svg);
 
-    // Add namespaces
+    //add name spaces.
     if(!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)){
         source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
     }
@@ -85,25 +70,19 @@ if (isset($_GET["patient_id"])) {
         source = source.replace(/^<svg/, '<svg xmlns:xlink="http://www.w3.org/1999/xlink"');
     }
 
-    // Add XML declaration
+    //add xml declaration
     source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
 
-    // Create a new link element
-    var link = document.createElement("a");
-    link.setAttribute("download", "barcode.svg");
-    link.setAttribute("href", "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(source));
+    //convert svg source to URI data scheme.
+    var url = "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(source);
 
-    // Append the link element to the document body
-    document.body.appendChild(link);
-
-    // Trigger a click on the link element to download the file
-    link.click();
-
-    // Remove the link element from the document body
-    document.body.removeChild(link);
+    //set url value to a element's href attribute.
+    document.getElementById("link").href = url;
+    //you can download svg file by right click menu.
   }
 
   setTimeout(() => {
     download();
-  }, 1000);
+  }, 1000)
+  
 </script>

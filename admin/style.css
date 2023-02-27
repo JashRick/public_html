@@ -482,8 +482,8 @@ font-size: 42px;
 
 /* Table Design*/
 .add-admin, .add-patient, .add-mh{
-  font-size: 18px;
-  padding: 5px;
+  font-size: 15px;
+  padding: 3px;
   color: #fff;
   display: inline;
   margin: 0 0 15px 5px;
@@ -562,4 +562,8 @@ font-size: 42px;
 .display a{
   text-decoration: none;
   color: #ffffffee;
+}
+.qrcode{
+   align-content:center;
+   justify-content:center;
 }

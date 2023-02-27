@@ -17,7 +17,7 @@ $stmt_result = $stmt->get_result();
     if($stmt_result->num_rows > 0) {
         $data = $stmt_result->fetch_assoc();
         if($data['admin_password'] === $apass) {
-        header("Location: ../../admin/admin.php");
+        header("Location: https://mabisamercadodentalclinic.000webhostapp.com/admin/admin.php?page=dashboard");
         } else {
         echo '<script type="text/javascript">'; 
         echo 'alert("Username or Password is Incorrect"); '; 
