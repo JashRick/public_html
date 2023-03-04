@@ -89,12 +89,14 @@ header .menu{
 		display: initial;
 	}
 	header .navbar{
+    margin: 5px;
 		position: absolute;
 		top: 100%; left: 0;  right: 0;
 		background: #fff;
 		border-bottom: 3px solid rgba(0, 0, 0, .1);
 		display: none;
 		border-radius: 10px;
+    text-align: center;
 	}
 	header .navbar ul li{
 		width: 100%;
@@ -141,8 +143,8 @@ header .menu{
  
   .container{
     max-width: 440px;
-    padding: 0 20px;
-    margin: 50px auto;
+    padding: 0 10px;
+    margin: 110px auto;
 	
   }
   .wrapper form #er{
@@ -255,24 +257,10 @@ header .menu{
   form .register a:hover{
     text-decoration: underline;
   }
-   .h1title h1{
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 50px;
-	margin-top: 100px;
-	color: #fff;
-	text-align: center;
-   }
+ 
   
 /* Patient Information */
-.container1{
-    max-width: 700px;
-    padding: 0 20px;
-    margin: 10px auto;
-	
-  }
+
 .wrapper1{
     width: 100%;
     background: #fff;

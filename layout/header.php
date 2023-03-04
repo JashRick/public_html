@@ -17,17 +17,7 @@
             <li><a href="../pages/patient_qr_code_loss.php">QR Code Loss</a></li>
 					</ul>
 			</li>
-			<li><a href="#">Medical History</a>
-				<ul>
-                    <li><a href="../pages/medical_history.php">History Form</a></li>
-                </ul>
-			</li>
-			<li><a href="#">Reports</a>
-				<ul>
-                    <li><a href="../pages/clinical_exam.php">Clinical Examination</a></li>
-                  
-                </ul>
-			</li>
+			
 		</ul>
 	</nav>
 </header>

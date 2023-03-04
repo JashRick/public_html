@@ -1,11 +1,16 @@
 
 <div class="overview">
+<div class="home-content">
     <div class="title">
         <i id="title-icon" class='fas fa-notes-medical' style="color: #9ba5b0;"></i>
         <span class="text">Clinical Examination List</span>
        
     </div>
 
+
+<div class="main-box">
+  
+  <div class="recent-sales box">
     <div>
     <table id="table" class="table table-striped table-bordered nowrap" style="width:100%">
             <thead>
@@ -26,7 +31,9 @@
 
     </div>
 </div>
-
+</div>
+    </div>
+   </div>
 <script>
     $(document).ready(function () {
         $('#table').DataTable();

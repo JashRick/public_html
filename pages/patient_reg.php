@@ -6,8 +6,8 @@
 <?php include('../layout/header.php'); ?>
 
 <div class="bg1">
-  <div class="h1title"><h1>Patient Information</h1></div>  
-<div class="container1">
+  
+<div class="container">
 		<div class="wrapper1" id="wrapper1">
 		  <div class="title"><span>Patient Registration</span></div>
           <form action="../api/patient-registration.php" method="GET">

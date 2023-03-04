@@ -1,7 +1,8 @@
 <?php require '../api/utils/connection.php'?>
+<div class="home-content">
 <div class="overview">
    
-    <div class="title">
+    <div class="dtitle">
         <i id="title-icon" class="uil uil-tachometer-fast-alt" ></i>
         <span class="text">Dashboard</span>
         

@@ -10,11 +10,7 @@
    
  
 
-     <div class="home-content">
-
-      <div class="main-box">
-        
-        <div class="recent-sales box">
+     
       
         
             <?php 
@@ -50,9 +46,7 @@
         
       ?>
         
-      </div>
-    </div>
-   </div>
+     
   </section>
      
   <script>

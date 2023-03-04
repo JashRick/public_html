@@ -152,14 +152,14 @@ nav .profile-details i{
 }
 .home-section .home-content{
   position: relative;
-  padding-top: 90px;
+  padding-top: 20px;
 }
 .home-content .overview-boxes{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 10px;
-  margin-bottom: 20px;
+  
 }
 .overview-boxes .box{
   display: flex;
@@ -229,8 +229,8 @@ font-size: 42px;
 .home-content .main-box .recent-sales{
   width: 100%;
   background: #fff;
-  padding: 20px 30px;
-  margin: 0 20px;
+  padding: 20px 10px;
+  margin: 10px;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -240,11 +240,11 @@ font-size: 42px;
   justify-content: space-between;
   width: 100%;
 }
-.main-box .box .title{
+.main-box .box .title, .dtitle{
   font-size: 24px;
   font-weight: 500;
   color: #004ba7;
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px; 
 }
 .main-box .sales-details li.topic{
   font-size: 20px;
@@ -291,6 +291,9 @@ font-size: 42px;
     
     overflow: hidden;
     cursor: pointer;
+}
+.menu ul{
+  margin-bottom: 0px;
 }
 .top .action .menu{
     position: absolute;
@@ -410,15 +413,15 @@ font-size: 42px;
   }
 }
 @media (max-width: 1150px) {
-  .home-content .main-box{
+  .home-content .sales-boxes{
     flex-direction: column;
   }
-  .home-content .main-box .box{
+  .home-content .sales-boxes .box{
     width: 100%;
     overflow-x: scroll;
     margin-bottom: 30px;
   }
-  .home-content .main-box .top-sales{
+  .home-content .sales-boxes .top-sales{
     margin: 0;
   }
 }
@@ -438,11 +441,11 @@ font-size: 42px;
     height: 50px;
     min-width: 40px;
   }
-  .home-content .main-box .sales-details{
+  .home-content .sales-boxes .sales-details{
     width: 560px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .overview-boxes .box{
     width: 100%;
     margin-bottom: 15px;
@@ -475,6 +478,7 @@ font-size: 42px;
     width: calc(100% - 60px);
   }
 }
+ 
 
 /* Table Design*/
 .add-admin, .add-patient, .add-mh{
@@ -510,9 +514,15 @@ font-size: 42px;
   background: #fff;
   color: #4bd70ab5;
 }
+.overview .dtitle {
+  
+  margin: 60px 0 15px 15px;
+}
 .overview .title {
-  border-bottom: 2px solid rgb(157, 151, 151);
-  margin: 0 0 30px 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #004ba7;
+  margin: 80px 0 5px 15px;
 }
 .overview #title-icon{
   font-size: 25px;
@@ -562,4 +572,122 @@ font-size: 42px;
 }
 .table a {
   color: #EFEEF1;
+}
+ /* Dentist Form styles*/
+ 
+ .container{
+  max-width: 440px;
+  padding: 0 10px;
+  margin: 110px auto;
+
+}
+.wrapper form #er{
+    color: #fd0808;
+   
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.wrapper{
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  border: 2px solid #fff;
+  height: 90px;
+  background: #004ba7;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#adminI{
+  position: absolute;
+  height: 200px;
+  width: 100px;
+}
+.wrapper form{
+  padding: 30px 25px 25px 25px;
+}
+.wrapper form .row{
+  height: 45px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.wrapper form .row input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 10px;
+  border: 2px solid #004ba7;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+#barcode_input{
+  padding-left: 10px;
+}
+form .row input:focus{
+  border-color: #004ba7;
+  box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+}
+form .row input::placeholder{
+  color: #999;
+}
+.wrapper form .row i{
+  position: absolute;
+  width: 47px;
+  height: 45px;
+  color: #fff;
+  font-size: 18px;
+  background: #004ba7;
+  border: 1px solid #004ba7;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form .pass{
+  margin: -8px 0 20px 0;
+}
+.wrapper form .pass a{
+  color: #004ba7;
+  font-size: 17px;
+  text-decoration: none;
+}
+.wrapper form .pass a:hover{
+  text-decoration: underline;
+}
+.wrapper form .button input{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #004ba7;
+  border: 3px solid #004ba7;
+  cursor: pointer;
+  align-content: center;
+}
+form .button .login:hover{
+  background: #0ac21d;
+}
+.wrapper form {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper form .register a{
+  color: #004ba7;
+  text-decoration: none;
+}
+form .register a:hover{
+  text-decoration: underline;
 }
