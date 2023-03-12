@@ -1,45 +1,50 @@
+<?php include("../api/utils/connection.php");
+include("../api/dentist-view.php");
+?>
+<div class="home-content">
+    <div class="overview">
+        <div class="title">
+            <i id="title-icon" class="fas fa-user-cog"></i>
+                <span class="text">Dentist Form</span>
+            <button class="add-admin" type="button" onclick="location.href='../pages/admin_reg.php'"><i class="fas fa-plus"></i> <span> Add New Admin</span></button>
+            <div class="main-box">
+                <div class="recent-sales box">
+                        <form action="../api/dentist-update.php?" method="GET">
+                            <input style="display:none;" name="id" required value="<?php echo $GLOBALS['dentist']['id']; ?>">
+                            <div class="mb-3">
+                                <i class="fas fa-user-tie"></i>
+                                <label class="form-label">Full Name"</label>
+                                <input class="form-control" placeholder="Full Name" name="fullname" required value="<?php echo $GLOBALS['dentist']['admin_fullname']; ?>">
+                            </div>
 
+                            <div class="mb-3">
+                                <i class="fas fa-user"></i>
+                                <label class="form-label">Username</label>
+                                <input class="form-control" placeholder="Username" name="username" required value="<?php echo $GLOBALS['dentist']['admin_username']; ?>">
+                            </div>
 
+                            <div class="mb-3">
+                                <i class="fas fa-envelope"></i>
+                                <label class="form-label">Email</label>
+                                <input class="form-control" placeholder="Email" name="email" required value="<?php echo $GLOBALS['dentist']['admin_email']; ?>">
+                            </div>
 
-<?php include("../pages/layout/head.php"); ?>
-<?php include("../pages/layout/nav.php"); ?>
-  <section class="home-section">
-    
-  <?php include("../pages/layout/header.php"); ?>
-<link rel="stylesheet" type="text/css" href="../style.css">
-<div class="overview">
-    <div class="title">
-        <i class="uil uil-tachometer-fast-alt"></i>
-        <span class="text">Dentist Form</span>
-    </div>                
-</div>   
-<div class="container">
-		<div class="wrapper" id="wrapper1">
-		  <div class="title"><span>Admin Registration</span></div>
-		  <form action="../api/dentist-registration.php" method="GET">
-				<div class="row">
-					<i class="fas fa-user-tie"></i>
-					<input type="text" placeholder="Full Name" name="fullname" required>
-					</div>
-				<div class="row">
-					<i class="fas fa-user"></i>
-					<input type="text" placeholder="Username" name="username" required>
-				</div>
-				<div class="row">
-					<i class="fas fa-envelope"></i>
-					<input type="email" placeholder="Email" name="email" required>
-				</div>
-				<div class="row">
-					<i class="fas fa-lock"></i>
-					<input type="password" placeholder="Password" name="password" required>
-				</div>
-				<div class="row">
-					<i class="fas fa-lock"></i>
-					<input type="password" placeholder="Re-type Password" name="repassword" required>
-				</div>
-					
-		  </form>
-		</div>
-	  </div>
-   
-  </div>
+                            <div class="mb-3">
+                                <i class="fas fa-lock"></i>
+                                <label class="form-label">Password</label>
+                                <input class="form-control" placeholder="Password" name="password" required value="<?php echo $GLOBALS['dentist']['admin_password']; ?>">
+                            </div>
+
+                            <div class="mb-3">
+                                <i class="fas fa-lock"></i>
+                                <label class="form-label">Re-type Password</label>
+                                <input class="form-control" placeholder="Re-type Password" name="repassword" required value="<?php echo $GLOBALS['dentist']['admin_repassword']; ?>">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php echo $_SERVER['dentist']['admin_fullname']; ?>

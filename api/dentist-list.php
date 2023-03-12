@@ -27,16 +27,12 @@ $result = $con->query($sql);
       echo '<td>' . $row["admin_fullname"] . '</td>';
       
       echo '<td>
-      <div class="view">
-          <a href="button"><i class="fas fa-eye" alt="View"></i> View</i> </a>
+        <div class="w-100">
+          <a class="btn btn-info w-100" href="?page=dentist-form&id='.$row["id"].'"><i class="fas fa-trash-alt" alt="View"> Edit</i> </a>
         </div>
-      <div class="edit">
-        <a href="?page=dentist-form&id='.$row['id'].'">
-        <i class="fas fa-user-edit"></i><span class="link-name"> Edit</span>
-        </a>
-       </div>  
-        <div class="delete">
-          <a href="../../api/dentist-delete.php?id='.$row["id"].'"><i class="fas fa-trash-alt" alt="Delete"> Delete</i> </a>
+        <br>
+        <div class="w-100">
+          <a class="btn btn-danger w-100" href="../../api/dentist-delete.php?id='.$row["id"].'"><i class="fas fa-trash-alt" alt="Delete"> Delete</i> </a>
         </div>
       </td>';
       echo '</tr>';
