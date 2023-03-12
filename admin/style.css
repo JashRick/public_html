@@ -9,7 +9,7 @@
 .sidebar{
   position: fixed;
   height: 100%;
-  width: 240px;
+  width: 280px;
   background:#004ba7;
   transition: all 0.5s ease;
 }
@@ -37,6 +37,7 @@
 }
 .sidebar .nav-links{
   margin-top: 10px;
+  margin-left: -30px;
 }
 .sidebar .nav-links li{
   position: relative;
@@ -84,7 +85,7 @@
   background: #f5f5f5;
   min-height: 100vh;
   width: calc(100% - 240px);
-  left: 240px;
+  left: 280px;
   transition: all 0.5s ease;
 }
 .sidebar.active ~ .home-section{
@@ -100,7 +101,7 @@
   align-items: center;
   position: fixed;
   width: calc(100% - 240px);
-  left: 240px;
+  /* left: 280px; */
   z-index: 100;
   padding: 0 20px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);

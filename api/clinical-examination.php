@@ -24,7 +24,7 @@ $malocclusion = $_GET['malocclusion'];
          $stmtt->execute();
          echo '<script type="text/javascript">'; 
          echo 'alert("Successfully Added!"); '; 
-         echo 'window.location = "https://mabisamercadodentalclinic.000webhostapp.com/pages/clinical_exam.php";';
+         echo 'window.location = "../pages/clinical_exam.php";';
          echo '</script>';
          $stmtt->close();
          $conn->close();

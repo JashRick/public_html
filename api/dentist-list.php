@@ -36,7 +36,7 @@ $result = $con->query($sql);
         </a>
        </div>  
         <div class="delete">
-          <a href="../admin/pages/dentist-delete.php"><i class="fas fa-trash-alt" alt="Delete"> Delete</i> </a>
+          <a href="../../api/dentist-delete.php?id='.$row["id"].'"><i class="fas fa-trash-alt" alt="Delete"> Delete</i> </a>
         </div>
       </td>';
       echo '</tr>';

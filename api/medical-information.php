@@ -23,7 +23,7 @@ $sm = $_GET['self_medication'];
     $stmt->execute();
     echo '<script type="text/javascript">'; 
     echo 'alert("Successfully Added!"); '; 
-    echo 'window.location = "https://mabisamercadodentalclinic.000webhostapp.com/pages/medical_history.php";';
+    echo 'window.location = "../pages/medical_history.php";';
     echo '</script>';
     $stmt->close();
     $con->close();

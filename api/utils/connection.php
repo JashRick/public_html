@@ -5,7 +5,7 @@ $sname= "localhost";
 //$uname= "root";
 //$password = "";
 $uname= "root";
-$password = "";
+$password = "root";
 $con = mysqli_connect($sname, $uname, $password, $db_name);
 
 if (!$con)
