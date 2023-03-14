@@ -20,7 +20,6 @@
                     <th>Last Name</th>
                     <th>First Name</th>
                     <th>Middle Initial</th>
-                    <th>QR Code</th>
                     <th>Action</th>
                 </tr>
             </thead>

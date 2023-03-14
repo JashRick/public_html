@@ -69,8 +69,12 @@
         <li>
           <a href="?page=reports-list">
           <i class='fas fa-notes-medical'></i>
-                <span class="links_name">Clinical Examinations</span>
+                <span class="links_name">Reports</span>
           </a>
+          <ul>
+              <li>Clinical Examination</li>
+
+          </ul>
         </li>
        
         <li class="log_out">

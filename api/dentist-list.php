@@ -28,7 +28,7 @@ $result = $con->query($sql);
       
       echo '<td>
         <div class="w-100">
-          <a class="btn btn-info w-100" href="?page=dentist-form&id='.$row["id"].'"><i class="fas fa-trash-alt" alt="View"> Edit</i> </a>
+          <a class="btn btn-info w-100" href="?page=dentist-form&id='.$row["id"].'"><i class="fas fa-user-edit" alt="Edit"> Edit</i> </a>
         </div>
         <br>
         <div class="w-100">

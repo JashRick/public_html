@@ -5,8 +5,8 @@
 
       <div class="overview-boxes">
         <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total of Admin</div>
+          <div class="right-side"  style="width:100%; text-align:center; color:#0d62ff;">
+            <div class="box-topic">Admin</div>
             
             <?php
                 // establish database connection
@@ -28,7 +28,7 @@
                 if ($result->num_rows > 0) {
                 $row = $result->fetch_assoc();
                 $count = $row["count"];
-                echo "Total count: " . $count;
+                echo "<span class='count'>Total count: " . $count . "</span>";
                 } else {
                 echo "No results found";
                 }
@@ -38,11 +38,11 @@
                 ?>
                 
           </div>
-          <i class='fas fa-user-cog' ></i>
+          <i class='fas fa-user-cog icon-right'></i>
         </div>
         <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total of Patient</div>
+          <div class="right-side"  style="width:100%; text-align:center; color:rgb(255, 0, 183);">
+            <div class="box-topic" >Patient&nbsp;</div>
             
             <?php
                 // establish database connection
@@ -64,7 +64,7 @@
                 if ($result->num_rows > 0) {
                 $row = $result->fetch_assoc();
                 $count = $row["count"];
-                echo "Total count: " . $count;
+                echo "<span class='count'>Total count: " . $count . "</span>";
                 } else {
                 echo "No results found";
                 }
@@ -77,8 +77,8 @@
           <i class='fas fa-user'></i>
         </div>
         <div class="box">
-          <div class="right-side">
-            <div class="box-topic3">Total of Medical History</div>
+          <div class="right-side"  style="width:100%; text-align:center; color:#09bb0f;">
+            <div class="box-topic">Medical History</div>
             
             <?php
                 // establish database connection
@@ -100,7 +100,7 @@
                 if ($result->num_rows > 0) {
                 $row = $result->fetch_assoc();
                 $count = $row["count"];
-                echo "Total count: " . $count;
+                echo "<span class='count'>Total count: " . $count . "</span>";
                 } else {
                 echo "No results found";
                 }
@@ -113,7 +113,7 @@
           <i class='fas fa-file-medical'></i>
         </div>
         <div class="box">
-          <div class="right-side">
+          <div class="right-side"  style="width:100%; text-align:center; color:#9ba5b0;">
             <div class="box-topic">Clinical Examinations</div>
             
             <?php
@@ -136,7 +136,7 @@
                 if ($result->num_rows > 0) {
                 $row = $result->fetch_assoc();
                 $count = $row["count"];
-                echo "Total count: " . $count;
+                echo "<span class='count'>Total count: " . $count . "</span>";
                 } else {
                 echo "No results found";
                 }

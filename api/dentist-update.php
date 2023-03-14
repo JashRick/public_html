@@ -13,12 +13,12 @@ if ($pass == $repass) {
    $sql = "UPDATE `tbl_adminreg` SET admin_fullname = '$fname', admin_username = '$username', admin_password = '$pass', admin_repassword = '$repass' WHERE id = '$id'";
 
    if(mysqli_query($con,$sql)) {
-      header("location: ../pages/admin_reg.php?status=success&message=Registration Succesfully!");
+      header("location: ../pages/dentist-list.php?status=success&message=Registration Succesfully!");
    } else {
-      header("location: ../pages/admin_reg.php?status=error&message=Something went wrong.");
+      header("location: ../pages/dentist-list.php?status=error&message=Something went wrong.");
    }
 } else {
-   header("location: ../pages/admin_reg.php?status=error&message=Password not matched.");
+   header("location: ../pages/dentist-list.php?status=error&message=Password not matched.");
 }
 
 mysqli_close($con);

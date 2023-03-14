@@ -12,8 +12,8 @@
   <div class="recent-sales box">
     
     <div>
-    <table id="table" class="table table-striped table-bordered nowrap" style="width:100%" >
-            <thead>
+    <table id="table" class="table table-striped table-bordered table-hover table-nowrap" style="width:100%; " >
+            <thead class="">
                 <tr>
                     <th>QR Code</th>
                     <th>id</th>
