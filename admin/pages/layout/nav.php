@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="../style.css">
 <!---
 <nav>
     <div class="logo-name">
@@ -34,7 +35,7 @@
         
     </div>
 </nav> -->
- <div class="sidebar">
+ <!--<div class="sidebar">
     
     <div class="logo-image">
             <img src="../images/logo2.png" alt="MABISA Logo">
@@ -84,4 +85,6 @@
           </a>
         </li>
       </ul>
-  </div>
+  </div>-->
+  <?php include("../layout/header.php"); ?>
+  
