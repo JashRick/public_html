@@ -29,33 +29,33 @@ body{
   	z-index: 1000;
   }
  
-  header .navbar ul{
+  header .navbar1 ul{
   	list-style: none;
   }
-  header .navbar ul li{
+  header .navbar1 ul li{
   	position: relative;
   	float: left;
   }
-header .navbar ul li a{
+header .navbar1 ul li a{
 	font-size: 20px;
 	padding: 10px;
 	color: #004ba7;
 	display: block;
   font-weight: 600;
 }
-header .navbar ul li a:hover{
+header .navbar1 ul li a:hover{
 	background: #1b9bff;
 	color: #fff;
 	border-radius: 10px 10px 0 0; 
 	font-size: 20px;
 }
-header .navbar ul li a:active{
+header .navbar1 ul li a:active{
 	background: #fff;
 	color: #1b9bff;
 	border-radius: 10px;
 	font-size: 25px;
 }
-header .navbar ul li ul{
+header .navbar1 ul li ul{
 	position: absolute;
 	left: 0;
 	
@@ -64,17 +64,17 @@ header .navbar ul li ul{
 	border-radius: 0 0 10px 10px;
 	text-align: center;
 }
-header .navbar ul li ul li{
+header .navbar1 ul li ul li{
 	width: 100%;
 	border-top: 2px solid rgba(0,0,0,.1);
 }
-header .navbar ul li ul li ul{
+header .navbar1 ul li ul li ul{
 	left: 200px;
 	top: 0;
   
 }
-header .navbar ul li:focus-within > ul,
-header .navbar ul li:hover> ul{
+header .navbar1 ul li:focus-within > ul,
+header .navbar1 ul li:hover> ul{
 	display: list-item;
  
 }
@@ -99,7 +99,7 @@ header .menu{
 	header .menu{
 		display: initial;
 	}
-	header .navbar{
+	header .navbar1{
     margin: 5px;
 		position: absolute;
 		top: 100%; left: 0;  right: 0;
@@ -109,21 +109,21 @@ header .menu{
 		border-radius: 10px;
     text-align: center;
 	}
-	header .navbar ul li{
+	header .navbar1 ul li{
 		width: 100%;
 	}
-	header .navbar ul li ul{
+	header .navbar1 ul li ul{
 		width: 100%;
 		position: relative;
 	}
-	header .navbar ul li ul li{
+	header .navbar1 ul li ul li{
 		background: #eee;
 	}
-	header .navbar ul li ul li ul{
+	header .navbar1 ul li ul li ul{
 		width: 100%;
 		left: 0;
 	}
-#menu-bar:checked ~ .navbar{
+#menu-bar:checked ~ .navbar1{
 		display: initial;
 	}
 	
@@ -274,11 +274,9 @@ header .menu{
 /* Patient Information */
 
 .wrapper1{
-  position:relative;
-  width: 800px;
-  left: 20%;
-  
-    margin: 40px 0px 10px 0;
+   
+    
+    margin: 70px 10px 10px 10px;
     background: #fff;
     border-radius: 20px;
     box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
@@ -471,26 +469,26 @@ select option{
 }
 
 /* Styles for the active link */
-.navbar a:active {
+.navbar1 a:active {
   color: #fff;
   background-color: #007bff;
   border-radius: 5px;
 }
 
 /* Styles for the menu items */
-.navbar ul {
+.navbar1 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.navbar li {
+.navbar1 li {
   display: inline-block;
   position: relative;
   
 }
 
-.navbar li a {
+.navbar1 li a {
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -498,7 +496,7 @@ select option{
 }
 
 /* Styles for the dropdown menu */
-.navbar ul ul {
+.navbar1 ul ul {
   display: none;
   position: absolute;
   top: 100%;
@@ -510,20 +508,20 @@ select option{
 
 
 
-.navbar ul ul li {
+.navbar1 ul ul li {
   display: block;
   width: 200px;
   margin: 0;
   padding: 0;
 }
 
-.navbar ul ul li a {
+.navbar1 ul ul li a {
   color: #007bffe3;
   text-decoration: none;
   
 }
 
-.navbar ul ul li a:hover {
+.navbar1 ul ul li a:hover {
   color: #fff;
   background-color: #001aff;
   border-radius: 10px;
@@ -571,7 +569,9 @@ select option{
   background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);   }
   .btn_dentist:active {
   background: #144E75; }
-
+.btn_dentist a{
+  color: #fff;
+}
 
   .btn_patient {
     color: rgb(255, 255, 255); 
@@ -589,7 +589,9 @@ select option{
     box-shadow: rgba(0, 0, 0, 0.27) 4px 4px 8px 1px; 
     border: 4px outset rgba(255, 0, 183, 0.854); 
     display: inline-block;}
-  
+  .btn_patient a{
+    color: #fff;
+  }
     .btn_patient:hover {
     background: linear-gradient(to right, #DB009D 0%, #FF00B7 50%, #C90091 100%);}
     .btn_patient:active {

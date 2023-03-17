@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="../style.css">
+
 <!---
 <nav>
     <div class="logo-name">
@@ -35,56 +35,52 @@
         
     </div>
 </nav> -->
- <!--<div class="sidebar">
-    
-    <div class="logo-image">
-            <img src="../images/logo2.png" alt="MABISA Logo">
-       
-      <span class="logo_name">MABISA</span>
-    </div>
-      <ul class="nav-links">
-        <li>
-          <a href="?page=dashboard" class="active">
-          <i class='fas fa-home'></i>
-             <span class="links_name">Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="?page=dentist-list">
-          <i class='fas fa-user-cog' ></i>
-            <span class="links_name">Dentist Administration</span>
-          </a>
-        </li>
-        <li>
-          <a href="?page=patient-list">
-          <i class='fas fa-user'></i>
-            <span class="links_name">Patient Information</span>
-          </a>
-        </li>
-        <li>
-          <a href="?page=medical-history-list">
-          <i class='fas fa-file-medical'></i>
-            <span class="links_name">Medical History</span>
-          </a>
-        </li>
-        <li>
-          <a href="?page=reports-list">
-          <i class='fas fa-notes-medical'></i>
-                <span class="links_name">Reports</span>
-          </a>
-          <ul>
-              <li>Clinical Examination</li>
 
-          </ul>
-        </li>
-       
-        <li class="log_out">
-          <a href="#">
-          <i class="fas fa-info-circle"></i>
-            <span class="links_name">About Us</span>
-          </a>
-        </li>
-      </ul>
-  </div>-->
-  <?php include("../layout/header.php"); ?>
-  
+
+<div class="sidebar">
+  <div class="logo-image">
+    <img src="../images/logo2.png" alt="Logo">
+    <span class="logo_name">Welcome!</span>
+  </div>
+  <ul class="nav-links">
+    <li>
+      <a href="?page=dashboard" class="active">
+        <i class="fas fa-home"></i>
+        <span class="links_name">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a href="?page=dentist-list">
+        <i class="fas fa-user-cog"></i>
+        <span class="links_name">Dentist Administration</span>
+      </a>
+    </li>
+    <li>
+      <a href="?page=patient-list">
+        <i class="fas fa-user"></i>
+        <span class="links_name">Patient Information</span>
+      </a>
+    </li>
+    <li>
+      <a href="?page=medical-history-list">
+        <i class="fas fa-file-medical"></i>
+        <span class="links_name">Medical History</span>
+      </a>
+    </li>
+    <li>
+      <a href="?page=reports-list">
+        <i class="fas fa-notes-medical"></i>
+        <span class="links_name">Reports</span>
+      </a>
+    </li>
+    <li class="log_out">
+      <a href="#">
+        <i class="fas fa-sign-out-alt"></i>
+        <span class="links_name">Log Out</span>
+      </a>
+    </li>
+    <li class="Close">
+        <i class="fas fa-arrow-alt-circle-left" style="font-size: 30px;"></i>
+    </li>
+  </ul>
+</div>

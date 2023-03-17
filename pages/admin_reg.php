@@ -1,3 +1,17 @@
+<?php
+
+if (isset($_GET["status"]) && isset($_GET["message"])) {
+
+	$status = $_GET["status"];
+	$message = $_GET["message"];
+
+	echo '<script type="text/javascript">'; 
+	echo 'Swal.fire("Admin", "'.$message.'", "'.$status.'"); '; 
+	echo '</script>';
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,9 +26,7 @@
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<div class="bg1">
 
- 
 <div class="container">
 		<div class="wrapper" id="wrapper1">
 		  <div class="title"><span>Admin Registration</span></div>
@@ -42,7 +54,7 @@
 					<div class="row button">
 					<input class="login" type="submit" value="Register">
 				</div>
-				<div class="register">Back to <a href="../admin/admin.php">Admin</a></div>
+				<div class="register">Back to <a href="../admin/pages/dashboard.php">Admin</a></div>
 		  </form>
 		</div>
 	  </div>

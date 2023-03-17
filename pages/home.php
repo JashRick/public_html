@@ -19,7 +19,7 @@
     <h1>MABISA: Patients Electronic Management Record<br>System With Quick Response Code<br>For Mercado Dental Clinic</h1>
    
    
-   <button class="btn_dentist"><a href="#section2"a>Dentist</button>  <button class="btn_patient"><a href="#section3"a>Patient</button>
+   <button class="btn_dentist"><a href="#section2">Dentist</a></button>  <button class="btn_patient"><a href="#section3">Patient</a></button>
 	</div>
 </div>
 <div>

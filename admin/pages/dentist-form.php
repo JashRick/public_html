@@ -13,12 +13,12 @@ include("../api/dentist-view.php");
                             <input style="display:none;" name="id" required value="<?php echo $GLOBALS['dentist']['id']; ?>">
                             <div class="mb-3">
                                 <i class="fas fa-user-tie"></i>
-                                <label class="form-label">Full Name"</label>
+                                <label class="form-label">Full Name</label>
                                 <input class="form-control" placeholder="Full Name" name="fullname" required value="<?php echo $GLOBALS['dentist']['admin_fullname']; ?>">
                             </div>
 
                             <div class="mb-3">
-                                <i class="fas fa-user"></i>
+                            <i class="fas fa-user-circle"></i>
                                 <label class="form-label">Username</label>
                                 <input class="form-control" placeholder="Username" name="username" required value="<?php echo $GLOBALS['dentist']['admin_username']; ?>">
                             </div>

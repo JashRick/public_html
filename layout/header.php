@@ -2,7 +2,7 @@
 	<label class="logo" id="logo"><img src="../images/logo.png" alt="logo"></label>
 	<input type="checkbox" id="menu-bar">
 	<label class="menu" for="menu-bar"> <i class="fas fa-bars"></i></label>
-	<nav class="navbar">
+	<nav class="navbar1">
 		<ul>
 			<li><a href="../index.php">Home</a></li>
 			<li><a href="#">Dentist Administration</a>
