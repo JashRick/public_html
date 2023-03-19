@@ -74,12 +74,13 @@
       </a>
     </li>
     <li class="log_out">
-      <a href="#">
+      <a href="../api/utils/logout.php">
         <i class="fas fa-sign-out-alt"></i>
         <span class="links_name">Log Out</span>
       </a>
     </li>
     <li class="Close">
+      
         <i class="fas fa-arrow-alt-circle-left" style="font-size: 30px;"></i>
     </li>
   </ul>

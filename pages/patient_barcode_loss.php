@@ -3,7 +3,7 @@
 <?php include('../layout/head.php'); ?>
 <body>
 
-<?php include('../layout/header.php'); ?>
+<?php include("../admin/pages/layout/header1.php"); ?>
 
 <div class="bg1">
   <div class="h1title"><h1>Patient Information</h1></div>  

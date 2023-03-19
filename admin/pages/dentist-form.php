@@ -1,4 +1,5 @@
-<?php include("../api/utils/connection.php");
+<?php 
+include("../api/utils/connection.php");
 include("../api/dentist-view.php");
 ?>
 <div class="home-content">
@@ -9,8 +10,8 @@ include("../api/dentist-view.php");
           
             <div class="main-box">
                 <div class="recent-sales box">
-                        <form action="../api/dentist-update.php?" method="GET">
-                            <input style="display:none;" name="id" required value="<?php echo $GLOBALS['dentist']['id']; ?>">
+                        <form action="../api/dentist-update.php" method="GET">
+                            <input type="hidden" name="id" required value="<?php echo $GLOBALS['dentist']['id']; ?>">
                             <div class="mb-3">
                                 <i class="fas fa-user-tie"></i>
                                 <label class="form-label">Full Name</label>
@@ -47,4 +48,4 @@ include("../api/dentist-view.php");
         </div>
     </div>
 </div>
-<?php echo $_SERVER['dentist']['admin_fullname']; ?>
+

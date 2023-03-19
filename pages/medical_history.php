@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include('../layout/head.php'); ?>
-<body>
+<body class="bg1">
 
-<?php include('../layout/header.php'); ?>
+<?php include("../admin/pages/layout/header1.php"); ?>
 
-<div class="bg1">
+<div >
     
   <div class="h1title"><h1>Medical History</h1></div>  
 <div class="container1">

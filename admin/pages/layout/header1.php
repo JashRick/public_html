@@ -10,7 +10,7 @@
 					<ul>
 						<li><a href="../pages/admin_login.php">Log In</a></li>
 						<li><a href="../pages/admin_reg.php">Registration</a></li>
-						<li><a href="../pages/admin_reg.php">Forgot&nbsp;Password</a></li>
+						<li><a href="../pages/admin_forgot_pass.php">Forgot&nbsp;Password</a></li>
 						<li><a href="?page=dashboard">Admin&nbsp;Dashboard</a></li>
 					
 					</ul>

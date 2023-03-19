@@ -8,7 +8,7 @@ $result = $con->query($sql);
 
 
       echo '<tr>';
-       echo '<td style="align-items: center;">
+       echo '<td style="width:85px;">
             <div id="qrcode-' . $row["id"] . '" class="qrcode"></div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
             <script type="text/javascript">
@@ -27,12 +27,12 @@ $result = $con->query($sql);
       echo '<td>' . $row["admin_fullname"] . '</td>';
       
       echo '<td>
-        <div class="w-100">
-          <a class="btn btn-info w-100" href="?page=dentist-form&id='.$row["id"].'"><i class="fas fa-user-edit" alt="Edit"> Edit</i> </a>
+        <div class="edit">
+          <a  href="?page=dentist-form&id='.$row["id"].'"><i class="fas fa-user-edit" alt="Edit"> Edit</i> </a>
         </div>
-        <br>
-        <div class="w-100">
-          <a class="btn btn-danger w-100" href="../../api/dentist-delete.php?id='.$row["id"].'"><i class="fas fa-trash-alt" alt="Delete"> Delete</i> </a>
+        
+        <div class="delete">
+          <a class= href="../../api/dentist-delete.php?id='.$row["id"].'"><i class="fas fa-trash-alt" alt="Delete"> Delete</i> </a>
         </div>
       </td>';
       echo '</tr>';

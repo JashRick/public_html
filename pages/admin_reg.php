@@ -22,8 +22,9 @@ if (isset($_GET["status"]) && isset($_GET["message"])) {
 	<link rel="stylesheet" type="text/css" href="../style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-<body>
+<body class="bg1">
 
+<?php include("../admin/pages/layout/header1.php"); ?>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
@@ -54,7 +55,7 @@ if (isset($_GET["status"]) && isset($_GET["message"])) {
 					<div class="row button">
 					<input class="login" type="submit" value="Register">
 				</div>
-				<div class="register">Back to <a href="../admin/pages/dashboard.php">Admin</a></div>
+				<div class="register">Back to <a href="../admin/admin/dashboard.php">Admin</a></div>
 		  </form>
 		</div>
 	  </div>

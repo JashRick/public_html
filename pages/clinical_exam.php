@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('../layout/head.php'); ?>
-<body>
 
-<?php include('../layout/header.php'); ?>
+<body class="bg1">
+<?php include("../admin/pages/layout/header1.php"); ?>
 
-<div class="bg1">
+
   <div class="h1title"><h1>Reports</h1></div>  
 <div class="container1">
 		<div class="wrapper1" id="wrapper1">

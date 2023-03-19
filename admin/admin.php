@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <?php include("./pages/layout/head.php"); ?>
-  <?php include("./pages/layout/header1.php"); ?>
+  <head>
+    <?php include("./pages/layout/head.php"); ?>
+  </head>
   <body style="background: #f5f5f5;">
+    <?php include("./pages/layout/header1.php"); ?>
     <?php include("./pages/layout/nav.php"); ?>
     <section class="home-section">
-      
-      <!--<?php include("./pages/layout/header.php"); ?>-->
       <?php 
         if (isset($_GET["page"])) {
           $page = $_GET["page"];
           if ($page == "dashboard") {
             include("./pages/dashboard.php");
-          } else if ($page == "dentist-form") {
+          } else if ($page == "dentist-form" || str_contains($page, "dentist-form")) {
             include("./pages/dentist-form.php");
           } else if ($page == "dentist-list") {
             include("./pages/dentist-list.php");
-          } else if (str_contains($page, "dentist-form")) {
-            include("./pages/dentist-form.php");
           } else if ($page == "patient-list") {
             include("./pages/patient-list.php");
           } else if ($page == "patient-form") {

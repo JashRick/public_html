@@ -19,11 +19,14 @@
     <h1>MABISA: Patients Electronic Management Record<br>System With Quick Response Code<br>For Mercado Dental Clinic</h1>
    
    
-   <button class="btn_dentist"><a href="#section2">Dentist</a></button>  <button class="btn_patient"><a href="#section3">Patient</a></button>
-	</div>
+  
+   <button class="btn_dentist scroll"><a href="#dentist-section">Dentist</a></button>
+<button class="btn_patient scroll"><a href="#patient-section">Patient</a></button>
+
+  </div>
 </div>
 <div>
-<section id="section2" > 
+<section  id="dentist-section" > 
 	<div class="h1title"><h1>Dentist Administration</h1></div>  
 <div class="container">
 
@@ -52,7 +55,7 @@
 </div>
 
 <div>
-<section id="section3" > 
+<section id="patient-section"> 
 <div class="h1title"><h1>Patient Information</h1></div>  
 <div class="wrapper1" id="wrapper1">
 		  <div class="title"><span>Patient Registration</span></div>
@@ -161,4 +164,68 @@ if (isset($_GET["status"]) && isset($_GET["message"]) && isset($_GET["patient_id
 </section>
 </div>
 </body>
-</html>
+
+<script>
+  // Get all elements with class "scroll"
+  var scrollElements = document.getElementsByClassName("scroll");
+
+  // Add click event listener to each scroll element
+  for (var i = 0; i < scrollElements.length; i++) {
+    scrollElements[i].addEventListener("click", function(e) {
+      e.preventDefault(); // Prevent default behavior of clicking a link
+      var targetId = this.getElementsByTagName("a")[0].getAttribute("href"); // Get target section ID
+      var targetSection = document.querySelector(targetId); // Get target section element
+      var targetOffset = targetSection.offsetTop; // Get target section offset from top of page
+      var duration = 500; // Animation duration in milliseconds
+      var targetPosition = targetOffset - 50; // Subtract header height from target offset
+      var startPosition = window.pageYOffset; // Get current scroll position
+      var distance = targetPosition - startPosition; // Calculate distance to scroll
+      var startTime = null; // Initialize start time
+
+      // Animate scroll function
+      function animateScroll(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        var timeElapsed = currentTime - startTime;
+        var scrollAmount = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, scrollAmount);
+        if (timeElapsed < duration) requestAnimationFrame(animateScroll);
+      }
+
+      // Easing function
+      function easeInOutQuad(t, b, c, d) {
+        t /= d/2;
+        if (t < 1) return c/2*t*t + b;
+        t--;
+        return -c/2 * (t*(t-2) - 1) + b;
+      }
+
+      // Call animateScroll function
+      requestAnimationFrame(animateScroll);
+    });
+  }
+</script>
+
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+<script>
+  // Get the button
+  var scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  // Show/hide button based on scroll position
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollTopBtn.style.display = "block";
+    } else {
+      scrollTopBtn.style.display = "none";
+    }
+  }
+
+  // Scroll to top function
+  function topFunction() {
+    var duration = 500; // Animation duration in milliseconds
+    var startPosition = window.pageYOffset; // Get current scroll position
+    var distance = -startPosition; // Calculate distance to scroll
+    var startTime = null; // Initialize
+    </html>

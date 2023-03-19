@@ -8,7 +8,7 @@ $result = $con->query($sql);
 
 
       echo '<tr>';
-      echo '<td>
+      echo '<td style="width: 80px;">
       <div id="qrcode-' . $row["patient_id"] . '"></div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
       <script type="text/javascript">
@@ -28,9 +28,6 @@ $result = $con->query($sql);
       echo '<td>' . $row["pat_mi"] . '</td>';
      
       echo '<td>
-      <div class="view">
-          <a href="button"><i class="fas fa-eye" alt="View"></i> View</i> </a>
-        </div>
       <div class="edit">
         <a href="?page=patient-form&id='.$row['patient_id'].'">
         <i class="fas fa-user-edit"></i><span class="link-name"> Edit</span>

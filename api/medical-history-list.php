@@ -13,9 +13,7 @@ $result = $con->query($sql);
       echo '<td>' . $row["pat_firstname"] . '</td>';
       echo '<td>' . $row["pat_mi"] . '</td>';
       echo '<td>
-      <div class="view">
-      <a href="button"><i class="fas fa-eye" alt="View"></i> View</i> </a>
-    </div>
+      
         <a href="?page=medical-history-list&id='.$row['patient_id'].'"><div class="edit">
         <i class="fas fa-user-edit"></i><span class="link-name"> Edit</span>
         </a></div>
