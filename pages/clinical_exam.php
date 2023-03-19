@@ -62,6 +62,11 @@
                 <input type="text"id="Malocclusion" name="malocclusion"  required/>
               </div>
 
+              <div class="user-input-box">
+                <label for="height">Add Images</label>
+                <input type="file"id="Add_Images" name="Add_Images"/>
+              </div>
+
 
 
             </div>

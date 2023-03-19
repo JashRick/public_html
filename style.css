@@ -15,7 +15,21 @@ body{
   background-image: url(images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 800px;
+ }
+ .bg2{
+  background-image: url(images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+ }
+ .bg3{
+  background-image: url(images/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
  }
   header{
   	position: fixed;
@@ -352,7 +366,7 @@ header .menu{
     border-radius: 7px;
     outline: none;
     border: 2px solid #004ba7;
-    padding: 0 10px;
+    padding: 5px 10px;
 }
 .form-submit-btn{
     margin-top: 10px;
@@ -609,3 +623,47 @@ select option{
     background-position: cover;
     height: 800px;
   }
+  .h1title{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px #1C6EA4;
+    padding: 30px 30px 5px 30px;
+  }
+
+  /*Patient Home */
+  .containerp{
+    max-width: 700px;
+    padding: 0 20px;
+    margin: 60px auto;
+  
+  }
+  .wrapperp{
+      width: 800px;
+      margin-left: 50px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+    }
+  
+    .wrapperp .title{
+      border: 2px solid #fff;
+      height: 70px;
+      background: #004ba7;
+      border-radius: 5px 0;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #adminI{
+      position: absolute;
+      height: 200px;
+      width: 100px;
+    }
+    .wrapperp form{
+      padding: 5px 25px 5px 25px;
+    }

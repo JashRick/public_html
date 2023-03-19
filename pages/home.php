@@ -25,7 +25,7 @@
 
   </div>
 </div>
-<div>
+<div class="bg2">
 <section  id="dentist-section" > 
 	<div class="h1title"><h1>Dentist Administration</h1></div>  
 <div class="container">
@@ -54,10 +54,10 @@
 </section>
 </div>
 
-<div>
+<div class="bg3"> 
 <section id="patient-section"> 
 <div class="h1title"><h1>Patient Information</h1></div>  
-<div class="wrapper1" id="wrapper1">
+<div class="wrapperp" id="wrapperp">
 		  <div class="title"><span>Patient Registration</span></div>
           <form action="../api/patient-registration.php" method="GET">
             <div class="main-user-info">

@@ -29,8 +29,8 @@
 			</li>
 			<li><a href="?page=reports-list">Reports</a>
 					<ul>
-						<li><a href="#">Diagnosis</a></li>
-						<li><a href="#">Prescription</a></li>
+						<li><a href="#">Evaluation</a></li>
+						
 					</ul>
 			</li>
 		</ul>

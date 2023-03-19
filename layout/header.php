@@ -28,8 +28,8 @@
 			</li>
 			<li><a href="#">Reports</a>
 					<ul>
-						<li><a href="#">Diagnosis</a></li>
-						<li><a href="#">Prescription</a></li>
+						<li><a href="#">Evaluation</a></li>
+				
 					</ul>
 			</li>
 		</ul>
