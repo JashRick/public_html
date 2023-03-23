@@ -35,11 +35,13 @@
               </div>
               <div class="user-input-box">
                 <label for="gender">Gender</label>
-                <select class="gender">
+                <input type="text"id="gender" name="gender" placeholder="Select Gender" required/>
+               <!-- <select class="gender">
                     <option value="" style="color: grey;">Select Gender</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
-                </select>
+                </select>--> 
+
                
 
 <?php

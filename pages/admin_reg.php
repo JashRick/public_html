@@ -55,7 +55,7 @@ if (isset($_GET["status"]) && isset($_GET["message"])) {
 					<div class="row button">
 					<input class="login" type="submit" value="Register">
 				</div>
-				<div class="register">Back to <a href="../admin/admin/dashboard.php">Admin</a></div>
+				<div class="register">Back to <a href="http://localhost/CP/public_html/admin/admin.php?page=dashboard">Admin</a></div>
 		  </form>
 		</div>
 	  </div>

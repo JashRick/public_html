@@ -11,6 +11,24 @@
 <body>
 
 <?php include('../layout/header.php'); ?>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollTopBtn").style.display = "block";
+  } else {
+    document.getElementById("scrollTopBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 
 <div class="bg1">
 
@@ -214,18 +232,46 @@ if (isset($_GET["status"]) && isset($_GET["message"]) && isset($_GET["patient_id
   // Show/hide button based on scroll position
   window.onscroll = function() {scrollFunction()};
 
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      scrollTopBtn.style.display = "block";
-    } else {
-      scrollTopBtn.style.display = "none";
-    }
+ // Smooth scroll to section when clicking on button
+function scrollFunction(target) {
+  var targetSection = document.querySelector(target);
+  if (targetSection) {
+    window.scrollTo({
+      top: targetSection.offsetTop,
+      behavior: 'smooth'
+    });
   }
+}
 
-  // Scroll to top function
-  function topFunction() {
-    var duration = 500; // Animation duration in milliseconds
-    var startPosition = window.pageYOffset; // Get current scroll position
-    var distance = -startPosition; // Calculate distance to scroll
-    var startTime = null; // Initialize
+// Show or hide the "scroll to top" button based on the current scroll position
+function topFunction() {
+  var scrollTopButton = document.getElementById("scroll-top-button");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollTopButton.style.display = "block";
+  } else {
+    scrollTopButton.style.display = "none";
+  }
+}
+
+// Add event listeners for scrolling and clicking the "scroll to top" button
+window.addEventListener("scroll", function() {
+  topFunction();
+});
+
+var scrollTopButton = document.getElementById("scroll-top-button");
+if (scrollTopButton) {
+  scrollTopButton.addEventListener("click", function() {
+    scrollFunction("body");
+  });
+}
+
+var scrollButtons = document.querySelectorAll(".scroll");
+for (var i = 0; i < scrollButtons.length; i++) {
+  scrollButtons[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    var target = this.getAttribute("href");
+    scrollFunction(target);
+  });
+}
+
     </html>

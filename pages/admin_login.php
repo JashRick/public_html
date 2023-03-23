@@ -1,5 +1,11 @@
 
 <!DOCTYPE html>
+<head>
+  <!-- Include SweetAlert2 CSS and JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.css" integrity="sha512-z3lC1l8HItFuTfLgTc3mp3y/+cIQm9JzF0cd35EJvzZGSE+RyydJQQB2OHw5N5+Q25x8Nzy36e5GdJ4OZ02gzA==" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.js" integrity="sha512-tOs4t4X9vtbX74dOyH1l+sCAt3g/y2DGxEYcYbyGrsbZcPwjQU9g2sOz19vSwRiNNW8x35Ny0TkyTbMxbm/Gng==" crossorigin="anonymous"></script>
+
+</head>
 <html>
 <?php include('../layout/head.php'); ?>
 <body class="bg1">
@@ -7,7 +13,7 @@
 <?php include("../admin/pages/layout/header1.php"); ?>
 
 
-  <div class="h1title"><h1>Dentist Administration</h1></div>  
+  <div class="h1title"></div>  
 <div class="container">
 
     <div class="wrapper">
