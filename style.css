@@ -1,0 +1,843 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+ .bg1{
+  background-image: url(images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+ }
+ .bg2{
+  background-image: url(images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 748px;
+  
+ }
+ .bg3{
+  background-image: url(images/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+  
+ }
+  header{
+  	position: fixed;
+  	top: 0; left: 0; right: 0;
+  	background: white;
+  	box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  	padding: 0px 5%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	z-index: 1000;
+  }
+ 
+  header .navbar1 ul{
+  	list-style: none;
+  }
+  header .navbar1 ul li{
+  	position: relative;
+  	float: left;
+  }
+header .navbar1 ul li a{
+	font-size: 20px;
+	padding: 10px;
+	color: #004ba7;
+	display: block;
+  font-weight: 600;
+}
+header .navbar1 ul li a:hover{
+	background: #1b9bff;
+	color: #fff;
+	border-radius: 10px 10px 0 0; 
+	
+}
+header .navbar1 ul li a:active{
+	background: #fff;
+	color: #1b9bff;
+	border-radius: 10px;
+	font-size: 25px;
+}
+header .navbar1 ul li ul{
+	position: absolute;
+	left: 0;
+	
+	background: #fff;
+	display: none;
+	border-radius: 0 0 10px 10px;
+	text-align: center;
+}
+header .navbar1 ul li ul li{
+	width: 100%;
+	border-top: 2px solid rgba(0,0,0,.1);
+}
+header .navbar1 ul li ul li ul{
+	left: 200px;
+	top: 0;
+  
+}
+header .navbar1 ul li:focus-within > ul,
+header .navbar1 ul li:hover> ul{
+	display: list-item;
+ 
+}
+
+
+#menu-bar{
+	display: none;
+}
+header .menu{
+	font-size: 35px;
+	color: #004ba7;
+	cursor: pointer;
+	display: none;
+  margin-right: 10px;
+}
+
+
+@media(max-width: 1210px){
+	header{
+		padding: 10px;
+	}
+	header .menu{
+		display: initial;
+	}
+	header .navbar1{
+    margin: 5px;
+		position: absolute;
+		top: 100%; left: 0;  right: 0;
+		background: #fff;
+		border-bottom: 3px solid rgba(0, 0, 0, .1);
+		display: none;
+		border-radius: 10px;
+    text-align: center;
+	}
+	header .navbar1 ul li{
+		width: 100%;
+	}
+	header .navbar1 ul li ul{
+		width: 100%;
+		position: relative;
+	}
+	header .navbar1 ul li ul li{
+		background: #eee;
+	}
+	header .navbar1 ul li ul li ul{
+		width: 100%;
+		left: 0;
+	}
+#menu-bar:checked ~ .navbar1{
+		display: initial;
+	}
+	
+}
+.tbox{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+  .tbox h3{
+    font-size: 30px;
+    letter-spacing: 8px;
+    margin: 40px 0 15px 0;
+  }
+  .tbox h1{
+    font-size: 47px;
+    margin: 10px 0 40px;
+    letter-spacing: 2px;
+    position: relative;
+    
+  }
+  /* Admin Login styles*/
+ 
+  .container{
+    max-width: 440px;
+    padding: 0 10px;
+    margin: 110px auto;
+	
+  }
+  .wrapper form #er{
+      color: #fd0808;
+     
+      margin-top: 2px;
+      margin-bottom: 2px;
+  }
+  .wrapper{
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+  }
+  .wrapper .title{
+    border: 2px solid #fff;
+    height: 90px;
+    background: #004ba7;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #adminI{
+    position: absolute;
+    height: 200px;
+    width: 100px;
+  }
+  .wrapper form{
+    padding: 30px 25px 25px 25px;
+  }
+  .wrapper form .row{
+    height: 45px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .wrapper form .row input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 10px;
+    border: 2px solid #004ba7;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+ #barcode_input{
+    padding-left: 10px;
+  }
+  form .row input:focus{
+    border-color: #004ba7;
+    box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+  }
+  form .row input::placeholder{
+    color: #999;
+  }
+  .wrapper form .row i{
+    position: absolute;
+    width: 47px;
+    height: 45px;
+    color: #fff;
+    font-size: 18px;
+    background: #004ba7;
+    border: 1px solid #004ba7;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper form .pass{
+    margin: -8px 0 20px 0;
+  }
+  .wrapper form .pass a{
+    color: #004ba7;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .wrapper form .pass a:hover{
+    text-decoration: underline;
+  }
+  .wrapper form .button input{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: #004ba7;
+    border: 3px solid #004ba7;
+    cursor: pointer;
+    align-content: center;
+  }
+  form .button .login:hover{
+    background: #0ac21d;
+  }
+  .wrapper form {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .wrapper form .register a{
+    color: #004ba7;
+    text-decoration: none;
+  }
+  form .register a:hover{
+    text-decoration: underline;
+  }
+ 
+  #toggle-password{
+     position: relative;
+    background: none;
+    color: #004ba7;
+    border: none;
+    display: flex;
+    top: -45px;
+    left: 320px;
+  }
+/* Patient Information */
+.container1{
+  max-width: 700px;
+  padding: 0 15px;
+  margin: 60px auto;
+
+}
+.wrapper1{
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+  }
+
+  .wrapper1 .title{
+    border: 2px solid #fff;
+    height: 90px;
+    background: #004ba7;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .wrapperp .rtitle {
+    border: 2px solid #fff;
+    height: 70px;
+    background: #004ba7;
+    border-radius: 5px 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+  #adminI{
+    position: absolute;
+    height: 200px;
+    width: 100px;
+  }
+  .wrapper1 form{
+    padding: 5px 15px 5px 15px;
+  }
+
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:  0px;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 5px;
+}
+.diagnosis-box, .treatment-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.diagnosis-box label, .treatment-box label{
+    width: 95%;
+    color: #004ba7;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 5px 0;
+    letter-spacing: 1PX;
+}
+.diagnosis-box textarea, select{
+    height: 35px;
+    width: 95%;
+    border-radius: 7px;
+    border: 2px solid #004ba7;
+    padding: 5px 10px;
+}
+.treatment-box textarea, select{
+    height: 35px;
+    width: 95%;
+    border-radius: 7px;
+    border: 2px solid #004ba7;
+    padding: 5px 10px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: #004ba7;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 5px 0;
+    letter-spacing: 1PX;
+}
+
+.fullName{
+  width: 30%;
+  color: #004ba7;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 3px;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+}
+#fullName{
+  width: 30%;
+  color: #004ba7;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 3px;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+}
+
+.user-input-box input, select{
+    height: 35px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 2px solid #004ba7;
+    padding: 5px 10px;
+}
+.form-submit-btn{
+    margin-top: 10px;
+}
+select option{
+	padding: 10px;
+	border: 3px solid #004ba7;
+	border-radius: 5px;
+	color: #004ba7;
+}
+
+.form-submit-btn input{
+    width: 100%;
+    margin-top: 2px 0px 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:3px solid #004ba7;
+    border-radius: 10px;
+	  color: #fdfdfd;
+    background: #004ba7;
+
+}
+
+.form-submit-btn input:hover{
+    background: #0ac21d;
+    color: rgb(255, 255, 255);
+}
+
+@media(max-width: 600px){
+    .container{
+        margin:30px auto;
+        min-width: 280px;
+    }
+   .tbox h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 85px 0 15px 0;
+  }
+  .tbox h1{
+    font-size: 34px;
+    margin: 10px 0 40px;
+    letter-spacing: 2px;
+    position: relative;
+    
+  }
+  .wrapperp .rtitle{
+   font-size: 25px;
+  }
+  .h1title h2{
+      font-size: 35px;
+  }
+
+    .user-input-box{
+        margin-bottom: 1px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        color: blue;
+        width: 0;
+    }
+  #toggle-password{
+      left: 85%;
+  }
+  
+}
+
+/* QR Code Style */
+.container2{
+  max-width: 700px;
+  padding: 0 20px;
+  margin: 40px auto;
+}
+.wrapper2{
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper2 .title2{
+  border: 2px solid #fff;
+  height: 90px;
+  background: #004ba7;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#adminI{
+  position: absolute;
+  height: 200px;
+  width: 100px;
+}
+.wrapper2 form{
+  padding: 5px 25px 5px 25px;
+}
+.main-user-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:  0px;
+}
+.user-input-box2:nth-child(2n){
+  justify-content: end;
+}
+.user-input-box2{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.user-input-box2 label{
+  width: 95%;
+  color: #004ba7;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0;
+  letter-spacing: 1PX;
+  text-align: center;
+}
+.wrapper2 .go-to-MH{
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Styles for the active link */
+.navbar1 a:active {
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+/* Styles for the menu items */
+.navbar1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar1 li {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.navbar1 li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Styles for the dropdown menu */
+.navbar1 ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+.navbar1 ul ul li {
+  display: block;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar1 ul ul li a {
+  color: #007bffe3;
+  text-decoration: none;
+  
+}
+
+.navbar1 ul ul li a:hover {
+  color: #fff;
+  background-color: #001aff;
+  border-radius: 10px;
+}
+
+.btn_dentist {
+  color: rgb(255, 255, 255); 
+  font-size: 25px; 
+  line-height: 16px; 
+  padding: 15px; 
+  margin: 10px 20px;
+  border-radius: 8px;  
+  font-weight: normal; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+  background: #1C6EA4;
+  box-shadow: rgba(0, 0, 0, 0.27) 4px 4px 8px 1px; 
+  border: 4px outset rgb(7, 126, 205); 
+  display: inline-block;}
+
+  .btn_dentist:hover {
+  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);   }
+  .btn_dentist:active {
+  background: #144E75; }
+  .btn_dentist {
+  color: rgb(255, 255, 255); 
+  font-size: 25px; 
+  line-height: 16px; 
+  padding: 15px; 
+  margin: 10px 20px;
+  border-radius: 8px;  
+  font-weight: normal; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+  background: #1C6EA4;
+  box-shadow: rgba(0, 0, 0, 0.27) 4px 4px 8px 1px; 
+  border: 4px outset rgb(7, 126, 205); 
+  display: inline-block;}
+
+  .btn_dentist:hover {
+  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);   }
+  .btn_dentist:active {
+  background: #144E75; }
+.btn_dentist a{
+  color: #fff;
+}
+
+  .btn_patient {
+    color: rgb(255, 255, 255); 
+    font-size: 25px; 
+    line-height: 16px; 
+    padding: 15px; 
+    margin: 10px 20px;
+    border-radius: 8px;  
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background: rgb(255, 0, 183);
+    box-shadow: rgba(0, 0, 0, 0.27) 4px 4px 8px 1px; 
+    border: 4px outset rgba(255, 0, 183, 0.854); 
+    display: inline-block;}
+  .btn_patient a{
+    color: #fff;
+  }
+    .btn_patient:hover {
+    background: linear-gradient(to right, #DB009D 0%, #FF00B7 50%, #C90091 100%);}
+    .btn_patient:active {
+    background: #DB009D; }
+
+  #section2{
+    background-color: #1561ed;
+    background-position: cover;
+    height: 800px;
+  }
+  #section3{
+    background-color: #DB009D;;
+    background-position: cover;
+    height: 800px;
+  }
+  .h1title{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px #1C6EA4;
+    padding: 30px 30px 5px 30px;
+  }
+
+  /*Patient Home */
+  .containerp{
+    max-width: 700px;
+    padding: 0 15px;
+    margin: 28px auto;
+  
+  }
+  .wrapperp{
+      width: 100%;
+      
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+    }
+  
+    .wrapperp .title{
+      border: 2px solid #fff;
+      height: 70px;
+      background: #004ba7;
+      border-radius: 5px 0;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #adminI{
+      position: absolute;
+      height: 200px;
+      width: 100px;
+    }
+    .wrapperp form{
+      padding: 5px 10px 5px 10px;
+    }
+    /* Back to Top Button */
+    #scrollTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    
+    #scrollTopBtn:hover {
+      background-color: #0069d9;
+    }
+    
+    /* FOOTER */
+    .footer-basic {
+  padding:20px 0;
+  background-color:#9302ae;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-basic li {
+  padding:0 25px;
+}
+
+.footer-basic ul a {
+  color: #ffffff;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 0 10px;
+    color: #ffffff;
+    padding: 2px;
+}
+
+.footer-basic .social > a:hover {
+ color: #fff;
+ font-size: 30px;
+ border: 2px solid #9302ae;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#eee;
+  margin-bottom:0;
+}
